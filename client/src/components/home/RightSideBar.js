@@ -21,7 +21,7 @@ const RightSideBar = () => {
 
             {suggestions.users?.length <= 0 ? '' :
                 <div className="d-flex justify-content-between align-items-center my-2">
-                    <h5 className="text-danger">Suggestions for you</h5>
+                    <h5 className="text-danger">Gợi ý</h5>
                     {
                         !suggestions.loading &&
                         <i className="fas fa-redo" style={{ cursor: 'pointer' }}
@@ -47,7 +47,7 @@ const RightSideBar = () => {
 
             {auth.user.following.length <= 0 ? '' :
                 <div className="d-flex justify-content-between align-items-center my-2">
-                    <h5 className="text-danger">Followings</h5>
+                    <h5 className="text-danger">Đang theo dõi</h5>
                 </div>
             }
 

@@ -62,7 +62,7 @@ const EditProfile = ({ setOnEdit }) => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="fullname">Full Name</label>
+                    <label htmlFor="fullname">Họ và tên</label>
                     <div className="position-relative">
                         <input type="text" className="form-control" id="fullname"
                             name="fullname" value={fullname} onChange={handleInput} />
@@ -74,13 +74,13 @@ const EditProfile = ({ setOnEdit }) => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="mobile">Mobile</label>
+                    <label htmlFor="mobile">Số điện thoại</label>
                     <input type="text" name="mobile" value={mobile}
                         className="form-control" onChange={handleInput} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="address">Address</label>
+                    <label htmlFor="address">Địa chỉ</label>
                     <input type="text" name="address" value={address}
                         className="form-control" onChange={handleInput} />
                 </div>
@@ -92,7 +92,7 @@ const EditProfile = ({ setOnEdit }) => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="story">Story</label>
+                    <label htmlFor="story">Giới thiệu</label>
                     <textarea name="story" value={story} cols="30" rows="4"
                         className="form-control" onChange={handleInput} />
 
@@ -101,18 +101,18 @@ const EditProfile = ({ setOnEdit }) => {
                     </small>
                 </div>
 
-                <label htmlFor="gender">Gender</label>
+                <label htmlFor="gender">Giới tính</label>
                 <div className="input-group-prepend px-0 mb-4">
                     <select name="gender" id="gender" value={gender}
                         className="custom-select text-capitalize"
                         onChange={handleInput}>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
                     </select>
                 </div>
 
-                <button className="btn btn-info w-100" type="submit">Save</button>
+                <button className="btn btn-info w-100" type="submit">Lưu</button>
             </form>
         </div>
     )

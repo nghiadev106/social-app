@@ -46,7 +46,7 @@ const Info = ({id, auth, profile, dispatch}) => {
                                     user._id === auth.user._id
                                     ?  <button className="btn btn-outline-info"
                                     onClick={() => setOnEdit(true)}>
-                                        Edit Profile
+                                        Cập nhật hồ sơ
                                     </button>
                                     
                                     : <FollowBtn user={user} />
@@ -57,10 +57,10 @@ const Info = ({id, auth, profile, dispatch}) => {
 
                             <div className="follow_btn">
                                 <span className="mr-4" onClick={() => setShowFollowers(true)}>
-                                    {user.followers.length} Followers
+                                    {user.followers.length} Người theo dõi
                                 </span>
                                 <span className="ml-4" onClick={() => setShowFollowing(true)}>
-                                    {user.following.length} Following
+                                    {user.following.length} Đang theo dõi
                                 </span>
                             </div>
 

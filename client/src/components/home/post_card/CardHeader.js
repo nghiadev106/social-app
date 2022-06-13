@@ -3,6 +3,7 @@ import Avatar from '../../Avatar'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import moment from 'moment'
+import 'moment/locale/vi' 
 import { GLOBALTYPES } from '../../../redux/actions/globalTypes'
 import { deletePost } from '../../../redux/actions/postAction'
 import { BASE_URL } from '../../../utils/config'
@@ -55,16 +56,16 @@ const CardHeader = ({post}) => {
                         auth.user._id === post.user._id &&
                         <>
                             <div className="dropdown-item" onClick={handleEditPost}>
-                                <span className="material-icons">create</span> Edit Post
+                                <span className="material-icons">create</span> Sửa bài viết
                             </div>
                             <div className="dropdown-item" onClick={handleDeletePost} >
-                                <span className="material-icons">delete_outline</span> Remove Post
+                                <span className="material-icons">delete_outline</span> Xóa bài viết
                             </div>
                         </>
                     }
 
                     <div className="dropdown-item" onClick={handleCopyLink}>
-                        <span className="material-icons">content_copy</span> Copy Link
+                        <span className="material-icons">content_copy</span> Sao chép Link
                     </div>
                 </div>
             </div>

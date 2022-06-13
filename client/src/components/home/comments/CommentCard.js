@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Avatar from '../../Avatar'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
-
+import 'moment/locale/vi' 
 import LikeButton from '../../LikeButton'
 import { useSelector, useDispatch } from 'react-redux'
 import CommentMenu from './CommentMenu'

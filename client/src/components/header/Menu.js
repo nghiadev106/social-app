@@ -62,7 +62,7 @@ const Menu = () => {
                     </span>
 
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>Profile</Link>
+                        <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>Hồ sơ</Link>
 
                         <label htmlFor="theme" className="dropdown-item"
                             onClick={() => dispatch({
@@ -75,7 +75,7 @@ const Menu = () => {
                         <div className="dropdown-divider"></div>
                         <Link className="dropdown-item" to="/"
                             onClick={() => dispatch(logout())}>
-                            Logout
+                            Đăng xuất
                         </Link>
                     </div>
                 </li>

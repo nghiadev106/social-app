@@ -113,7 +113,7 @@ const StatusModal = () => {
         <div className="status_modal">
             <form onSubmit={handleSubmit}>
                 <div className="status_header">
-                    <h5 className="m-0">Create Post</h5>
+                    <h5 className="m-0">Đăng bài</h5>
                     <span onClick={() => dispatch({
                         type: GLOBALTYPES.STATUS, payload: false
                     })}>
@@ -123,7 +123,7 @@ const StatusModal = () => {
 
                 <div className="status_body">
                     <textarea name="content" value={content}
-                        placeholder={`${auth.user.username}, what are you thinking?`}
+                        placeholder={`${auth.user.username}, bạn đang nghĩ gì vậy?`}
                         onChange={e => setContent(e.target.value)}
                         style={{
                             filter: theme ? 'invert(1)' : 'invert(0)',
@@ -196,7 +196,7 @@ const StatusModal = () => {
 
                 <div className="status_footer">
                     <button className="btn btn-secondary w-100" type="submit">
-                        Post
+                        Đăng
                     </button>
                 </div>
 

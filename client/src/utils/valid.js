@@ -2,31 +2,31 @@ const valid = ({fullname, username, email, password, cf_password}) => {
     const err = {}
 
     if(!fullname) {
-        err.fullname = "Please add your full name."
-    }else if(fullname.length > 25){
-        err.fullname = "Full name is up to 25 characters long."
+        err.fullname = "Vui lòng thêm tên đầy đủ của bạn."
+    }else if(fullname.length > 50){
+        err.fullname = "Tên đầy đủ dài tối đa 50 ký tự."
     }
 
     if(!username) {
-        err.username = "Please add your user name."
+        err.username = "Vui lòng thêm username."
     }else if(username.replace(/ /g, '').length > 25){
-        err.username = "User name is up to 25 characters long."
+        err.username = "User name không quá 25 ký tự."
     }
 
     if(!email) {
-        err.email = "Please add your email."
+        err.email = "Vui lòng thêm email của bạn."
     }else if(!validateEmail(email)){
-        err.email = "Email format is incorrect."
+        err.email = "Email không đúng định dạng."
     }
 
     if(!password) {
-        err.password = "Please add your password."
+        err.password = "Vui lòng thêm mật khẩu"
     }else if(password.length < 6){
-        err.password = "Password must be at least 6 characters."
+        err.password = "Mật khẩu phải có ít nhất 6 ký tự."
     }
 
     if(password !== cf_password) {
-        err.cf_password = "Confirm password did not match."
+        err.cf_password = "Xác nhận mật khẩu không chính xác."
     }
 
     return {

@@ -4,6 +4,7 @@ import NoNotice from '../images/notice.png'
 import { Link } from 'react-router-dom'
 import Avatar from './Avatar'
 import moment from 'moment'
+import 'moment/locale/vi' 
 import { isReadNotify, NOTIFY_TYPES, deleteAllNotifies } from '../redux/actions/notifyAction'
 
 const NotifyModal = () => {

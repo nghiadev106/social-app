@@ -32,20 +32,20 @@ const Login = () => {
     return (
         <div className="auth_page">
             <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">V-Network</h3>
+                <h3 className="text-uppercase text-center mb-4">Instagram</h3>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <label htmlFor="exampleInputEmail1">Email</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" name="email"
                     aria-describedby="emailHelp" onChange={handleChangeInput} value={email} />
                     
-                    <small id="emailHelp" className="form-text text-muted">
+                    {/* <small id="emailHelp" className="form-text text-muted">
                         We'll never share your email with anyone else.
-                    </small>
+                    </small> */}
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <label htmlFor="exampleInputPassword1">Mật khẩu</label>
 
                     <div className="pass">
                         
@@ -62,11 +62,11 @@ const Login = () => {
                 
                 <button type="submit" className="btn btn-dark w-100"
                 disabled={email && password ? false : true}>
-                    Login
+                    Đăng nhập
                 </button>
 
                 <p className="my-2">
-                    You don't have an account? <Link to="/register" style={{color: "crimson"}}>Register Now</Link>
+                    Bạn chưa có tài khoản? <Link to="/register" style={{color: "crimson"}}>Đăng ký</Link>
                 </p>
             </form>
         </div>

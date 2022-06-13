@@ -35,10 +35,10 @@ const Register = () => {
     return (
         <div className="auth_page">
             <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">V-Network</h3>
+                <h3 className="text-uppercase text-center mb-4">Instagram</h3>
 
                 <div className="form-group">
-                    <label htmlFor="fullname">Full Name</label>
+                    <label htmlFor="fullname">Họ và tên</label>
                     <input type="text" className="form-control" id="fullname" name="fullname"
                     onChange={handleChangeInput} value={fullname}
                     style={{background: `${alert.fullname ? '#fd2d6a14' : ''}`}} />
@@ -60,7 +60,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <label htmlFor="exampleInputEmail1">Email</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" name="email"
                     onChange={handleChangeInput} value={email}
                     style={{background: `${alert.email ? '#fd2d6a14' : ''}`}} />
@@ -71,7 +71,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <label htmlFor="exampleInputPassword1">Mật khẩu</label>
 
                     <div className="pass">
                         
@@ -91,7 +91,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="cf_password">Confirm Password</label>
+                    <label htmlFor="cf_password">Mật khẩu xác nhận </label>
 
                     <div className="pass">
                         
@@ -112,27 +112,27 @@ const Register = () => {
 
                 <div className="row justify-content-between mx-0 mb-1">
                     <label htmlFor="male">
-                        Male: <input type="radio" id="male" name="gender"
+                        Nam: <input type="radio" id="male" name="gender"
                         value="male" defaultChecked onChange={handleChangeInput} />
                     </label>
 
                     <label htmlFor="female">
-                        Female: <input type="radio" id="female" name="gender"
+                        Nữ: <input type="radio" id="female" name="gender"
                         value="female" onChange={handleChangeInput} />
                     </label>
 
                     <label htmlFor="other">
-                        Other: <input type="radio" id="other" name="gender"
+                        Khác: <input type="radio" id="other" name="gender"
                         value="other" onChange={handleChangeInput} />
                     </label>
                 </div>
                 
                 <button type="submit" className="btn btn-dark w-100">
-                    Register
+                    Đăng ký
                 </button>
 
                 <p className="my-2">
-                    Already have an account? <Link to="/" style={{color: "crimson"}}>Login Now</Link>
+                    Bạn đã có tài khoản? <Link to="/" style={{color: "crimson"}}>Đăng nhập</Link>
                 </p>
             </form>
         </div>
